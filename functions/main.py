@@ -354,7 +354,7 @@ def _format_timestamps(timestamps_data):
             continue
         overtaking_driver = _driver_acronym(overtake.get("overtaking_driver_number"))
         overtaken_driver = _driver_acronym(overtake.get("overtaken_driver_number"))
-        formatted_data.append(f"{time} - {overtaking_driver} overtook {overtaken_driver}")
+        formatted_data.append(f"{time} - {overtaking_driver} overtakes {overtaken_driver}")
 
     # Format pits
     for pit in events.get("pits", []):
@@ -362,7 +362,7 @@ def _format_timestamps(timestamps_data):
         if not time:
             continue
         driver = _driver_acronym(pit.get("driver_number"))
-        formatted_data.append(f"{time} - {driver} pitted")
+        formatted_data.append(f"{time} - {driver} pits")
 
     # Format flags
     for flag in events.get("flags", []):
