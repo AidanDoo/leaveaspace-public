@@ -1,0 +1,38 @@
+:root {
+  --bg: #1f2937;
+  --panel: #111827;
+  --muted: #9ca3af;
+  --muted-strong: #6b7280;
+  --text: #e5e7eb;
+  --text-strong: #f9fafb;
+  --select-bg: #374151;
+  --select-border: #4b5563;
+  --select-hover: #4b5563;
+  --focus: #60a5fa;
+  --focus-rgb: 96,165,250;
+  --focus-shadow: rgba(96,165,250,0.1);
+  --focus-shadow-12: rgba(96,165,250,0.12);
+  --input-bg: #374151;
+  --input-border: #4b5563;
+  --button-bg: #111827;
+  --button-border: #0f1522;
+  --accent-hover: #4b5563;
+  --error: #ef4444;
+  --error-shadow: rgba(239,68,68,0.1);
+  --white: #ffffff;
+}
+
+.app-layout {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: var(--bg);
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
+
+.app-content {
+  width: 100%;
+  max-width: 1200px;
+}
